@@ -32,9 +32,9 @@ nextflow.enable.dsl = 2
 version = '0.1.0'  // package version
 
 container = [
-    'y': 'y/y/nextflow-wfpm-2.demo-fastqc'
+    'github.com': 'github.com/nextflow-wfpm-2.demo-fastqc'
 ]
-default_container_registry = 'y'
+default_container_registry = 'github.com'
 /********************************************************************/
 
 
