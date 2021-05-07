@@ -7,9 +7,9 @@ nextflow.enable.dsl = 2
 version = '0.1.0'  // package version
 
 container = [
-    'github.com': 'github.com/nextflow-wfpm-2.demo-fastqc'
+    'ghcr.io': 'ghcr.io/nextflow-wfpm-2.demo-fastqc'
 ]
-default_container_registry = 'github.com'
+default_container_registry = 'ghcr.io'
 /********************************************************************/
 
 // universal params
