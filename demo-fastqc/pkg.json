@@ -2,7 +2,7 @@
     "name": "demo-fastqc",
     "version": "0.1.0",
     "description": "FastQC tool",
-    "main": "main.nf",
+    "main": "demo-fastqc",
     "deprecated": false,
     "keywords": [
         "qc"
@@ -14,9 +14,9 @@
     "container": {
         "registries": [
             {
-                "registry": "y",
+                "registry": "github.com",
                 "type": "docker",
-                "org": "y",
+                "org": "ratschlab",
                 "default": true
             }
         ]
