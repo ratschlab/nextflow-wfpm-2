@@ -1,0 +1,35 @@
+{
+    "name": "demo-fastqc",
+    "version": "0.1.0",
+    "description": "FastQC tool",
+    "main": "demo-fastqc",
+    "deprecated": false,
+    "keywords": [
+        "qc"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ratschlab/nextflow-wfpm-2.git"
+    },
+    "container": {
+        "registries": [
+            {
+                "registry": "github.com",
+                "type": "docker",
+                "org": "ratschlab",
+                "default": true
+            }
+        ]
+    },
+    "dependencies": [],
+    "devDependencies": [],
+    "contributors": [
+        {
+            "name": "Tinu Thomas",
+            "email": "thomasti@inf.ethz.ch"
+        }
+    ],
+    "license": "MIT",
+    "bugReport": "https://github.com/ratschlab/nextflow-wfpm-2/issues",
+    "homepage": "https://github.com/ratschlab/nextflow-wfpm-2#readme"
+}

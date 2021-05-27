@@ -1,0 +1,52 @@
+---started a repo in Ratschlab git repo
+nextflow-wfpm-2
+
+
+—in laptop where ‘wfpm’ is installed, 
+
+conda activate wf_dependency
+
+wfpm init  # is done in the path /Users/tinu/git
+It asks for GitHub repo name, account name and then a directory is seen named `nextflow-wfpm-2`
+
+ls nextflow-wfpm-2/
+LICENSE  LICENSE-short	README.md  nextflow.config  scripts  test_data	wfpr_modules
+
+===new tool
+wfpm new tool demo-fastqc
+? Your name [Tinu Thomas]: Tinu Thomas
+? Your email [thomasti@inf.ethz.ch]: thomasti@inf.ethz.ch
+? Package version [0.1.0]: 0.1.0
+? Package description [FastQC tool]: FastQC tool
+? Keywords (use ',' to separate keywords) [bioinformatics, seq, qc metrics]: qc
+? Docker base image [pegi3s/fastqc:0.11.9]: pegi3s/fastqc:0.11.9
+? Container registory [ghcr.io]: y
+? Container registory account [ratschlab]: y
+? Dependencies (use ',' to separate dependencies) []:
+? devDependencies (use ',' to separate devDependencies) []:
+{
+    "full_name": "Tinu Thomas",
+    "email": "thomasti@inf.ethz.ch",
+    "pkg_version": "0.1.0",
+    "pkg_description": "FastQC tool",
+    "keywords": "qc",
+    "docker_base_image": "pegi3s/fastqc:0.11.9",
+    "container_registry": "y",
+    "registry_account": "y",
+    "dependencies": "",
+    "devDependencies": ""
+}
+? Please confirm the information and continue: (Y/n)
+
+
+
+====
+conda activate wf_dependency
+
+cd /Users/tinu/git/nextflow-wfpm-2/demo-fastqc
+
+
+===docker login
+docker login --username thomasti --password ********
+
+docker pull pegi3s/fastqc
